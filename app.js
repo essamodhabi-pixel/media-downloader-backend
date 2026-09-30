@@ -16,7 +16,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // Download API endpoint
-app.post('/api/download', (req, res) => {
+app.post('/download', (req, res) => {
     const { url } = req.body;
     if (!url) {
         return res.status(400).json({ error: 'يرجى تقديم رابط صالح' });
