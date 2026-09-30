@@ -32,6 +32,4 @@ app.use((err, req, res, next) => {
     res.status(500).json({ error: 'حدث خطأ داخلي في الخادم' });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
